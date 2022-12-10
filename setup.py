@@ -6,13 +6,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="Yoku",
-    version="1.0.1",
+    version="1.0.2",
     packages=["yoku"],
     description="A minimal Yahoo! Auctions scraper.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     install_requires=[
         "requests>=2.26.0",
+        "python-telegram-bot>=13.15",
         "beautifulsoup4>=4.11.1",
         "tinydb>=4.7.0",
         "lxml>=4.9.1"
