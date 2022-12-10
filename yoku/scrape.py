@@ -1,4 +1,5 @@
 import re
+from urllib import parse
 from bs4 import BeautifulSoup
 import requests
 
@@ -17,7 +18,7 @@ def get_raw_results(query: str):
     """
 
     # start cannot be more than 15000
-    url = YAHUOKU_SEARCH_TEMPLATE.format(query=query, start=1, count=100)
+    url = YAHUOKU_SEARCH_TEMPLATE.format(query=parse.quote_plus(query), start=1, count=100)
     print(f"[GET] {url}")
 
     r = requests.get(url)
