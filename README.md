@@ -10,12 +10,20 @@ pip install yoku
 
 ## Deployment
 
-- Request a bot token from BotFather on Telegram.
+- Request a token from [BotFather](https://t.me/botfather) on Telegram.
 
-- Ensure that the `YOKU_BOT_TOKEN` environment variable is set.
+- Set the `YOKU_BOT_TOKEN` environment variable to that token.
+
+Run with:
 
 ```shell
 yoku
+```
+
+To run in the background (Linux):
+
+```shell
+nohup yoku &
 ```
 
 ## Bot Usage
