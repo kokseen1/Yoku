@@ -21,7 +21,7 @@ def notify(chat_id, result, bot):
     Notify a user of a new result
     """
 
-    msg = f"{result[KEY_URL]}\n*{result[KEY_TITLE]}*\n_{datetime.fromtimestamp(result[KEY_POST_TIMESTAMP]).strftime('%d/%m/%Y %I:%M:%S %p')}_\n`{result[KEY_START_PRICE]}¥`"
+    msg = f"{result[KEY_URL]}\n`{result[KEY_TITLE]}`\n_{datetime.fromtimestamp(result[KEY_POST_TIMESTAMP]).strftime('%d/%m/%Y %I:%M:%S %p')}_\n*{result[KEY_START_PRICE]}円*"
     try:
         bot.send_photo(chat_id, photo=requests.get(result[KEY_IMAGE]).content, caption=msg, parse_mode=telegram.ParseMode.MARKDOWN)
     except Exception as e:
