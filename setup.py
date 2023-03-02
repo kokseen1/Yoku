@@ -13,7 +13,7 @@ setup(
     long_description_content_type="text/markdown",
     install_requires=[
         "requests>=2.26.0",
-        "python-telegram-bot>=13.15",
+        "python-telegram-bot>=13.15,<20.0.0",
         "beautifulsoup4>=4.11.1",
         "tinydb>=4.7.0",
         "lxml>=4.9.1"
