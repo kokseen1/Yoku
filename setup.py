@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="Yoku",
-    version="1.0.7",
+    version="1.0.8",
     packages=["yoku"],
     description="A minimal Yahoo! Auctions scraper.",
     long_description=long_description,
