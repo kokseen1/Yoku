@@ -6,7 +6,7 @@ from yoku.consts import KEY_ITEM_ID, KEY_CHAT_ID
 from yoku.scrape import search
 from yoku.botutils import notify
 
-DB_PATH = Path.cwd(__file__) / "db.json"
+DB_PATH = Path.cwd() / "db.json"
 
 TABLE_QUERIES = "queries"
 KEY_QUERY = "query"
